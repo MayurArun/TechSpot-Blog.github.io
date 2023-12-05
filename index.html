@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Spot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/Logo.jpg" alt="Tech Spot Logo" width="100" height="50" />
+      <h1>Tech Spot</h1>
+    </header>
+
+    <div class="container">
+      <div class="main-content">
+        <!-- Blog Post Section -->
+        <!-- BLOG 1 -->
+        <div class="blog-post">
+          <div class="post-content">
+            <div class="post-summary">
+              <h2>Learning to Code</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+                dolorum architecto...
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="images/image1.jpeg"
+              alt="Blog Post Image"
+            />
+          </div>
+          <div class="full-content">
+            <p>Full blog post content goes here...</p>
+          </div>
+          <p class="read-more-btn">Read More</p>
+        </div>
+
+        <!-- BLOG 2 -->
+        <div class="blog-post">
+          <div class="post-content">
+            <div class="post-summary">
+              <h2>Learning to Code</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+                dolorum architecto...
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="images/image2.jpg"
+              alt="Blog Post Image"
+            />
+          </div>
+          <div class="full-content">
+            <p>Full blog post content goes here...</p>
+          </div>
+          <p class="read-more-btn">Read More</p>
+        </div>
+
+        <!-- BLOG 3 -->
+        <div class="blog-post">
+          <div class="post-content">
+            <div class="post-summary">
+              <h2>Learning to Code</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+                dolorum architecto...
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="images/image3.jpg"
+              alt="Blog Post Image"
+            />
+          </div>
+          <div class="full-content">
+            <p>Full blog post content goes here...</p>
+          </div>
+          <p class="read-more-btn">Read More</p>
+        </div>
+
+        <!-- BLOG 4 -->
+        <div class="blog-post">
+          <div class="post-content">
+            <div class="post-summary">
+              <h2>Learning to Code</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+                dolorum architecto...
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="images/image4.jpg"
+              alt="Blog Post Image"
+            />
+          </div>
+          <div class="full-content">
+            <p>Full blog post content goes here...</p>
+          </div>
+          <p class="read-more-btn">Read More</p>
+        </div>
+
+        <!-- BLOG 5 -->
+        <div class="blog-post">
+          <div class="post-content">
+            <div class="post-summary">
+              <h2>Learning to Code</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+                dolorum architecto...
+              </p>
+            </div>
+            <img
+              class="post-image"
+              src="images/image5.jpg"
+              alt="Blog Post Image"
+            />
+          </div>
+          <div class="full-content">
+            <p>Full blog post content goes here...</p>
+          </div>
+          <p class="read-more-btn">Read More</p>
+        </div>
+      </div>
+
+      <div class="side-column">
+        <!-- Profile Card -->
+        <div class="profile-card">
+          <img src="images/profile-pic.jpg" alt="Profile Image" />
+          <h2>Jone Deo</h2>
+          <p>Web Developer</p>
+        </div>
+
+        <!-- Extra Blogs -->
+        <div class="extra-blogs">
+          <h2>More Blogs</h2>
+          <ul>
+            <li><a href="#">Blog Title 1</a></li>
+            <li><a href="#">Blog Title 2</a></li>
+            <li><a href="#">Blog Title 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT TO OPEN AND CLOSE THE EXTRA CONTENT OF EACH BLOG POST -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var postContent = this.parentElement.querySelector('.full-content');
+
+            if (
+              postContent.style.display === 'none' ||
+              postContent.style.display === ''
+            ) {
+              postContent.style.display = 'block';
+              this.innerText = 'Read Less';
+            } else {
+              postContent.style.display = 'none';
+              this.innerText = 'Read More';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
